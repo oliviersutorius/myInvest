@@ -12,6 +12,11 @@ et la construction d'un PEA.
 - Autre plan d'épargne : ~8,5 k€, versements programmés de 100 €/mois
 - Projet en cours : ouverture et investissement sur un **PEA**
 - Niveau de connaissance en investissement : **débutant**
+- Âge : **48 ans**
+- Horizon de placement (PEA) : **15 ans et plus**
+- Montant disponible pour le PEA : **500 € à l'ouverture + 100 €/mois**
+- Tolérance au risque réelle : **moyenne**
+- Objectif précis du PEA : **complément de retraite**
 
 ## Principes transverses (valables pour toutes les commandes de ce projet)
 
@@ -28,6 +33,15 @@ et la construction d'un PEA.
   l'investisseur.
 - Toujours préciser que les performances passées ne préjugent pas des
   performances futures.
+
+## Export PDF des commandes
+
+Chaque exécution de `/pea-coach`, `/pea-plan` ou `/portfolio-audit` doit
+produire, en plus de la réponse affichée, un rapport PDF mis en forme dans
+`infos/`, nommé `<commande>_<AAAAMMJJ>.pdf` (ex. `pea-plan_20260901.pdf`).
+Gabarit et style : `scripts/report-template.html` /
+`scripts/report-style.css`. Génération : `scripts/render_pdf.sh` (Chrome
+headless). Le détail de la procédure est dans chaque fichier de commande.
 
 ## Commandes disponibles
 

@@ -45,3 +45,31 @@ Termine par :
 - **Ce que j'ai appris**
 - **Les risques à connaître**
 - **L'action concrète que je peux envisager**
+
+## Export PDF (obligatoire à la fin de cette commande)
+
+Une fois la réponse ci-dessus rédigée et affichée, exporte-la systématiquement
+en PDF, présentée de façon soignée :
+
+1. Convertis intégralement la réponse (titres, tableaux, listes, liens) en
+   HTML propre : `<h2>`/`<h3>` pour les titres, `<table>` pour les tableaux,
+   `<ul>`/`<ol>` pour les listes, `<a href="...">` pour les liens. Ne mets que
+   le contenu qui ira dans le corps du rapport (pas de balises
+   `<html>`/`<head>`/`<body>`).
+2. Lis le gabarit `scripts/report-template.html` et la feuille de style
+   `scripts/report-style.css` (à la racine du projet), puis remplace dans le
+   gabarit :
+   - `{{TITLE}}` par un titre court résumant l'audit réalisé ;
+   - `{{COMMAND}}` par `/portfolio-audit` ;
+   - `{{DATE_LABEL}}` par la date du jour au format lisible (ex. `7 septembre 2026`) ;
+   - `{{STYLE}}` par le contenu intégral de `scripts/report-style.css` ;
+   - `{{CONTENT}}` par le HTML produit à l'étape 1.
+3. Écris ce HTML final dans un fichier temporaire (répertoire de scratch, pas
+   dans le dépôt).
+4. Calcule la date du jour au format `YYYYMMDD` (commande `date +%Y%m%d`).
+5. Génère le PDF depuis la racine du projet avec :
+   `bash scripts/render_pdf.sh <fichier_html_temporaire> infos/portfolio-audit_<YYYYMMDD>.pdf`
+6. Confirme dans ta réponse le chemin du PDF généré
+   (`infos/portfolio-audit_<YYYYMMDD>.pdf`). Si un fichier du même nom existe
+   déjà (plusieurs exécutions le même jour), écrase-le sans redemander
+   confirmation.

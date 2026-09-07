@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>{{TITLE}}</title>
+<style>
+{{STYLE}}
+</style>
+</head>
+<body>
+  <div class="report-header">
+    <p class="eyebrow">myInvest — {{COMMAND}}</p>
+    <h1>{{TITLE}}</h1>
+    <p class="meta">Généré le {{DATE_LABEL}} · Contenu pédagogique, non un conseil en investissement personnalisé</p>
+  </div>
+
+  <div class="disclaimer">
+    Ce document a été produit à des fins pédagogiques par l'assistant du projet myInvest.
+    Les informations factuelles (frais, fiscalité, composition d'indices...) sont sourcées ;
+    les performances passées ne préjugent pas des performances futures. Ceci ne constitue
+    pas un conseil en investissement personnalisé au sens réglementaire.
+  </div>
+
+  {{CONTENT}}
+
+  <div class="report-footer">
+    myInvest · document généré automatiquement par la commande {{COMMAND}} · {{DATE_LABEL}}
+  </div>
+</body>
+</html>
