@@ -34,9 +34,14 @@ Pour répondre à cette question :
 9. Si une information me manque pour prendre une décision, indique-la
    clairement plutôt que de deviner.
 10. Sourcer toute affirmation factuelle (frais, fiscalité, composition
-    d'indice, chiffres de performance) sur un site de référence, avec le lien
-    quand c'est possible (AMF, service-public.fr, impots.gouv.fr, émetteurs
-    d'ETF, justETF, MSCI, Euronext...).
+    d'indice, chiffres de performance). **Avant de citer un chiffre précis
+    (TER, seuil fiscal, composition d'indice, performance...), vérifie-le en
+    direct avec WebSearch/WebFetch sur la source officielle plutôt que de te
+    fier à ta mémoire** : ces données évoluent et ta connaissance a une date
+    de coupure. Donne le lien de la page réellement consultée (AMF,
+    service-public.fr, impots.gouv.fr, émetteurs d'ETF, justETF, MSCI,
+    Euronext...). Si une vérification échoue ou reste incertaine, dis-le
+    clairement plutôt que d'avancer un chiffre non confirmé.
 
 Termine impérativement ta réponse par ces trois sections :
 

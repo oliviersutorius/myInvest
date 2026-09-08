@@ -50,9 +50,15 @@ Pour chaque recommandation :
 - indique les risques ;
 - donne les arguments pour et contre.
 
-Sourcer toute information factuelle (frais, fiscalité, composition d'indice)
-avec un lien vers un site de référence (AMF, service-public.fr,
-impots.gouv.fr, émetteurs d'ETF, justETF, MSCI, Euronext...).
+Sourcer toute information factuelle (frais, fiscalité, composition d'indice,
+performances). **Avant de citer un chiffre précis (TER, plafond PEA,
+composition d'indice, performance...), vérifie-le en direct avec
+WebSearch/WebFetch sur la source officielle plutôt que de te fier à ta
+mémoire** : ces données évoluent et ta connaissance a une date de coupure.
+Donne le lien de la page réellement consultée (AMF, service-public.fr,
+impots.gouv.fr, émetteurs d'ETF, justETF, MSCI, Euronext...). Si une
+vérification échoue ou reste incertaine, dis-le clairement plutôt que
+d'avancer un chiffre non confirmé.
 
 Termine par :
 
