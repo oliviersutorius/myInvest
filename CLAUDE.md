@@ -10,8 +10,22 @@ et la construction d'un PEA.
 - PER : ~14 k€, versements programmés de 100 €/mois
 - Livret A : ~2 k€
 - Autre plan d'épargne : ~8,5 k€, versements programmés de 100 €/mois
-- Projet en cours : ouverture et investissement sur un **PEA**
+- **PEA ouvert chez Fortuneo.** Date d'ouverture fiscale = date du 1er
+  versement (règle : c'est cette date, pas la date de signature du contrat,
+  qui fait courir le délai de 5 ans — source : service-public.gouv.fr F2385) :
+  **16 septembre 2026**. Exonération d'IR sur les gains acquise à partir du
+  16/09/2031 (prélèvements sociaux restant dus, taux 18,6 % depuis le
+  01/01/2026).
+- **Composition actuelle du PEA** (au 25/09/2026) :
+  - 15 parts **Amundi PEA Monde (MSCI World) UCITS ETF Acc** (ticker DCAM,
+    ISIN FR001400U5Q4), achetées le 25/09/2026 à 6,263 €/part (≈ 93,95 €
+    investis), 0 € de frais de courtage (1er ordre du mois, formule Starter)
+  - solde espèces résiduel ≈ 6,05 €
+- Projet en cours : poursuivre les versements programmés (100 €/mois) et,
+  selon la stratégie retenue (voir `infos/pea-plan_20260925.pdf`), éventuellement
+  diversifier sur d'autres zones (US, Europe, émergents)
 - Niveau de connaissance en investissement : **débutant**
+- Date de naissance : **5 août 1978**
 - Âge : **48 ans**
 - Horizon de placement (PEA) : **15 ans et plus**
 - Montant disponible pour le PEA : **500 € à l'ouverture + 100 €/mois**
