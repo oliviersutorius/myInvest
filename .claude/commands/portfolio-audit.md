@@ -45,19 +45,29 @@ consultée quand c'est possible (AMF, service-public.fr, impots.gouv.fr,
 ou reste incertaine, dis-le clairement plutôt que d'avancer un chiffre non
 confirmé. Distingue clairement les faits des hypothèses et opinions.
 
-Termine par :
+Le rapport doit se terminer par :
 
 - **Ce que j'ai appris**
 - **Les risques à connaître**
 - **L'action concrète que je peux envisager**
 
+## Sortie affichée vs PDF (important)
+
+Le contenu détaillé rédigé selon les consignes ci-dessus (analyse ligne par
+ligne, vue d'ensemble, pistes d'amélioration...) **ne doit pas être affiché
+dans la réponse visible** : rédige-le directement en HTML pour le rapport PDF
+(étape 1 ci-dessous). Dans ta réponse affichée, donne uniquement un **bilan
+court** de l'exécution : le portefeuille audité, 2-3 points clés à retenir,
+puis le chemin du PDF généré. Le contenu complet, structuré et sourcé, ne
+doit exister que dans le PDF.
+
 ## Export PDF (obligatoire à la fin de cette commande)
 
-Une fois la réponse ci-dessus rédigée et affichée, exporte-la systématiquement
-en PDF, présentée de façon soignée :
+Rédige le rapport complet (structuré selon les consignes ci-dessus) et
+exporte-le systématiquement en PDF, présenté de façon soignée :
 
-1. Convertis intégralement la réponse (titres, tableaux, listes, liens) en
-   HTML propre : `<h2>`/`<h3>` pour les titres, `<table>` pour les tableaux,
+1. Rédige intégralement le rapport (titres, tableaux, listes, liens) en HTML
+   propre : `<h2>`/`<h3>` pour les titres, `<table>` pour les tableaux,
    `<ul>`/`<ol>` pour les listes, `<a href="...">` pour les liens. Ne mets que
    le contenu qui ira dans le corps du rapport (pas de balises
    `<html>`/`<head>`/`<body>`).
@@ -74,7 +84,8 @@ en PDF, présentée de façon soignée :
 4. Calcule la date du jour au format `YYYYMMDD` (commande `date +%Y%m%d`).
 5. Génère le PDF depuis la racine du projet avec :
    `bash scripts/render_pdf.sh <fichier_html_temporaire> infos/portfolio-audit_<YYYYMMDD>.pdf`
-6. Confirme dans ta réponse le chemin du PDF généré
+6. Dans ta réponse affichée (pas dans le PDF), donne uniquement le bilan court
+   défini ci-dessus et confirme le chemin du PDF généré
    (`infos/portfolio-audit_<YYYYMMDD>.pdf`). Si un fichier du même nom existe
    déjà (plusieurs exécutions le même jour), écrase-le sans redemander
    confirmation.

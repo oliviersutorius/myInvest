@@ -36,12 +36,19 @@ et la construction d'un PEA.
 
 ## Export PDF des commandes
 
-Chaque exécution de `/pea-coach`, `/pea-plan` ou `/portfolio-audit` doit
-produire, en plus de la réponse affichée, un rapport PDF mis en forme dans
-`infos/`, nommé `<commande>_<AAAAMMJJ>.pdf` (ex. `pea-plan_20260901.pdf`).
-Gabarit et style : `scripts/report-template.html` /
-`scripts/report-style.css`. Génération : `scripts/render_pdf.sh` (Chrome
-headless). Le détail de la procédure est dans chaque fichier de commande.
+Chaque exécution de `/pea-coach`, `/pea-plan`, `/portfolio-audit` ou
+`/etf-compare` doit produire un rapport PDF mis en forme dans `infos/`, nommé
+`<commande>_<AAAAMMJJ>.pdf` (ex. `pea-plan_20260901.pdf`) — à l'exception de
+`/etf-compare`, dont le fichier est nommé `compare-<AAAAMMJJ>.pdf`. Gabarit et
+style : `scripts/report-template.html` / `scripts/report-style.css`.
+Génération : `scripts/render_pdf.sh` (Chrome headless). Le détail de la
+procédure est dans chaque fichier de commande.
+
+**Le contenu détaillé de l'analyse ne doit jamais être affiché dans la
+réponse en sortie standard** : il est rédigé directement pour le rapport PDF.
+La réponse affichée se limite à un bilan court de l'exécution (ce qui a été
+traité, quelques points clés) suivi de la confirmation du chemin du PDF
+généré.
 
 ## Commandes disponibles
 
@@ -51,3 +58,8 @@ headless). Le détail de la procédure est dans chaque fichier de commande.
   adaptée au profil ci-dessus.
 - `/portfolio-audit <composition du portefeuille>` — audit critique d'un
   portefeuille existant (lignes détenues, poids, frais).
+- `/etf-compare <ETF 1> <ETF 2> ...` — chaque ETF peut être donné par son nom
+  ou son code ISIN. Comparaison de plusieurs ETF (indice,
+  diversification, frais, performances 1 semaine/1 mois/6 mois/1 an/5 ans,
+  tracking, encours, réplication, risques, liquidité/spread, concentration...)
+  avec tableau récapitulatif et avis noté du meilleur au moins bon.
